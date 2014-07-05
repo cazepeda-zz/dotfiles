@@ -583,6 +583,17 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ###############################################################################
+# Yosemite Preferences                                                        #
+###############################################################################
+# Dark Theme
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
+killall Dock; killall SystemUIServer
+
+# Light Theme
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Light
+killall Dock; killall SystemUIServer
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
